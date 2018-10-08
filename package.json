@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start2": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,7 +12,8 @@
     "serve:ssr": "node dist/server",
     "build:client-and-server-bundles": "ng build --prod && ng run o-baby-app:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "postinstall": "npm run build:ssr && npm run serve:ssr"
+    "postinstall": "npm run build:ssr",
+    "start": "serve:ssr"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
+    "enhanced-resolve": "^4.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
